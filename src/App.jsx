@@ -2,6 +2,8 @@ import { useState } from "react";
 import logo from "./logo.svg";
 import FeedBacks from "./components/FeedBacks";
 import Reviews from "./components/Reviews";
+import Dashboard from "./components/Dashboard";
+import { Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
   const feedbacks_arary = [
@@ -32,11 +34,66 @@ const App = () => {
       },
     ],
   ];
+
+  const invoices = [
+    {
+      sr_no: "216872634787",
+      start_date: new Date(),
+      end_date: new Date(),
+      clients_count: 20,
+      amount: "1000 USD",
+    },
+    {
+      sr_no: "5676872634787",
+      start_date: new Date(),
+      end_date: new Date(),
+      clients_count: 20,
+      amount: "1000 USD",
+    },
+    {
+      sr_no: "321872634787",
+      start_date: new Date(),
+      end_date: new Date(),
+      clients_count: 20,
+      amount: "1000 USD",
+    },
+    {
+      sr_no: "123872634787",
+      start_date: new Date(),
+      end_date: new Date(),
+      clients_count: 20,
+      amount: "1000 USD",
+    },
+  ];
+
   return (
     <div className="bg-white-100 m-[10px] p-[20px] shadow-md block w-[100%] h-[100%] oveflow-auto">
-      <Reviews>
-        <FeedBacks feedbacks_arary={feedbacks_arary} />
-      </Reviews>
+      <Routes>
+        <Route path="/" element={<h1>Hi</h1>}></Route>
+      </Routes>
+      <Routes>
+        <Route
+          path="/feedbacks"
+          element={
+            <>
+              <Reviews>
+                <FeedBacks feedbacks_arary={feedbacks_arary} />
+              </Reviews>
+            </>
+          }
+        ></Route>
+        <Route
+          path="/dashboard"
+          element={
+            <>
+              <Dashboard invoices={invoices} />
+            </>
+          }
+        ></Route>
+      </Routes>
+
+      <Link to={`/feedbacks`}>Go to feedbacks page</Link>
+      <Link to={`/dashboard`}>Go to dashboad page</Link>
     </div>
   );
 };
