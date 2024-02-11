@@ -1,0 +1,14 @@
+[
+  { "label": "Jan", "new_contributors": 45 },
+  { "label": "Feb", "new_contributors": 32 },
+  { "label": "Mar", "new_contributors": 18 },
+  { "label": "Apr", "new_contributors": 27 },
+  { "label": "May", "new_contributors": 14 },
+  { "label": "Jun", "new_contributors": 48 },
+  { "label": "Jul", "new_contributors": 37 },
+  { "label": "Aug", "new_contributors": 29 },
+  { "label": "Sep", "new_contributors": 42 },
+  { "label": "Oct", "new_contributors": 39 },
+  { "label": "Nov", "new_contributors": 23 },
+  { "label": "Dec", "new_contributors": 19 }
+]

@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import FeedBacks from "./components/FeedBacks";
 import Reviews from "./components/Reviews";
 import Dashboard from "./components/Dashboard";
+import Stats from "./components/Stats";
 import { Routes, Route, Link } from "react-router-dom";
 
 const App = () => {
@@ -90,10 +91,19 @@ const App = () => {
             </>
           }
         ></Route>
+        <Route
+          path="/stats"
+          element={
+            <>
+              <Stats />
+            </>
+          }
+        ></Route>
       </Routes>
 
       <Link to={`/feedbacks`}>Go to feedbacks page</Link>
       <Link to={`/dashboard`}>Go to dashboad page</Link>
+      <Link to={`/stats`}>Go to stats page</Link>
     </div>
   );
 };

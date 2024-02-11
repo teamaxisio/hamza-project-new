@@ -1,0 +1,14 @@
+[
+  { "label": "Jan", "revenue": 12027 },
+  { "label": "Feb", "revenue": 7486 },
+  { "label": "Mar", "revenue": 3243 },
+  { "label": "Apr", "revenue": 5851 },
+  { "label": "May", "revenue": 1164 },
+  { "label": "Jun", "revenue": 14692 },
+  { "label": "Jul", "revenue": 10196 },
+  { "label": "Aug", "revenue": 6437 },
+  { "label": "Sep", "revenue": 13616 },
+  { "label": "Oct", "revenue": 11320 },
+  { "label": "Nov", "revenue": 6561 },
+  { "label": "Dec", "revenue": 4459 }
+]
