@@ -153,7 +153,7 @@ const FeedBacks = ({ feedbacks_arary }) => {
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 512 512"
-                  fill="#0090eb"
+                  fill="#0071bb"
                   className="w-[20px] h-[20px] absolute right-[10px] top-[10px]"
                 >
                   {/*!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc. */}
